@@ -11,7 +11,6 @@
   /* overflow-x: hidden;
   scroll-behavior: smooth; */
   font-family: "Lato", sans-serif;
-  scroll-behavior: smooth;
 }
 nav {
   position: absolute;
@@ -19,52 +18,49 @@ nav {
   height: 8vh;
   padding: auto;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(162, 169, 173, 0.9);
   display: flex;
   justify-content: space-between;
   list-style: none;
   align-items: center;
   color: white;
-  font-size: 1.1em;
+  font-size: 1.3em;
+}
+a{
+  text-decoration: none;
+  color: white;
 }
 nav li {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto 5%;
   /* margin: auto 3%; */
 }
 nav li ul,
 a {
-  margin: auto 12px;
+  cursor: pointer;
+  margin: 14px;
 }
+nav li ul a:hover{
+  color: black;
+}
+
 p {
   font-family: "Lato";
   font-size: x-large;
   font-weight: 400;
 }
-/* Scroll Snap Behaviour */
-html{
-  scroll-snap-type: y mandatory;
-}
-section {
-  scroll-snap-align: start;
-  height: 100%;
-}
 
-/* body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 body::-webkit-scrollbar {
   display: none;
   
 }
 
 #particles-js {
-  position: absolute;
+  position: fixed;
   /* left: 0; */
-  top: 100vh;
+  bottom: 0;
   width: 100%;
   min-height: 100vh;
   z-index: -1;
@@ -112,6 +108,7 @@ body::-webkit-scrollbar {
   background-color: rgba(162, 169, 173, 0.8);
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 .container {
   background-color: rgba(255, 255, 255, 0.9);
@@ -122,7 +119,7 @@ body::-webkit-scrollbar {
   flex-direction: column;
   align-items: center;
   min-height: 80vh;
-  height: 80%;
+  height: 8%;
   width: auto;
   max-width: 90%;
 }
@@ -184,25 +181,7 @@ body::-webkit-scrollbar {
   font-family: sans-serif;
   cursor: pointer;
 }
-/* .thbox {
-  height: 50px;
-  width: 80vw;
-  background-color: rgb(212, 11, 98);
-  border: none;
-  border-radius: 10px;
-  margin: 10px auto;
-  text-align: center;
-} */
-/* .thbox {
-  height: 400px;
-  width: 600px;
-} */
-/* .theory_box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 30px;
-} */
+
 
 #buttons {
   display: flex;
@@ -273,3 +252,36 @@ h1 {
   border: 1px solid red;
 } */
 /* TEST Purpose */
+/* Scroll Snap Behaviour
+html{
+  scroll-snap-type: y mandatory;
+}
+section {
+  scroll-snap-align: start;
+  height: 100%;
+} */
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+/* .thbox {
+  height: 50px;
+  width: 80vw;
+  background-color: rgb(212, 11, 98);
+  border: none;
+  border-radius: 10px;
+  margin: 10px auto;
+  text-align: center;
+} */
+/* .thbox {
+  height: 400px;
+  width: 600px;
+} */
+/* .theory_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+} */

@@ -28,7 +28,7 @@ async function merge(arr, start, mid, end) {
       audio.play();
       arr[k++] = rightArr[j++];
     }
-    await sleep(500); // Delay to visualize the sorting process
+    await sleep(300); // Delay to visualize the sorting process
     updateVisualization(arr, start + i, mid + j); // Update the visualization after each comparison
   }
 
@@ -36,14 +36,14 @@ async function merge(arr, start, mid, end) {
     arr[k++] = leftArr[i++];
     audio.play();
 
-    await sleep(500);
+    await sleep(300);
     updateVisualization(arr);
   }
 
   while (j < rightArr.length) {
     audio.play();
     arr[k++] = rightArr[j++];
-    await sleep(500);
+    await sleep(300);
     updateVisualization(arr);
   }
 }

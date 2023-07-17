@@ -16,7 +16,7 @@ particlesJS("particles-js", {
         type: "circle"
       },
       opacity: {
-        value: 0.9,
+        value: 0.7,
         random: false,
         anim: {
           enable: false
@@ -33,7 +33,7 @@ particlesJS("particles-js", {
         enable: true,
         distance: 150,
         color: "#222222" /* Replace with your desired line color */,
-        opacity: 0.8,
+        opacity: 0.7,
         width: 1
       },
       move: {
